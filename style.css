@@ -1,0 +1,29 @@
+/* Custom styles for the menu icon */
+.menu-icon.active .w3-border:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active .w3-border:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .w3-border:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Display the nav-links when active */
+#nav-links.w3-show {
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}

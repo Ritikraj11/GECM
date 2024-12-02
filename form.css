@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    background-color: rgb(187, 119, 31);
+    height: 100vh;
+    
+}
+.form-body{
+    width: 1000px;
+    height: 1500px;
+    background-color: #fff;
+    margin: auto;
+    
+    /* align-self: center; */
+ /* display: grid;
+ grid-template-rows: 1fr 1fr; */
+ padding: 1px;
+ /* background-image: url(/logo.jpeg);
+  background-size:auto;
+ background-attachment: fixed; 
+ opacity: 0.7;  */
+
+}
+.half{
+    
+        width: 40%;
+        height: 1500px;
+        /* background-color:aquamarine; */
+        margin-left: 2%;
+        /* align-self: center;
+        margin: 10%; 
+    border: 1px solid;  */
+    float: left;
+}
+
+
+.shalf{
+    width: 30%;
+        height: 1500px;
+         /* background-color: #0db046; */
+        margin-right: 20%; 
+        /* align-self: center; */
+        float: right;
+}
+
+
+#college_name{
+    text-align: center;
+    color: #000066;
+}
+h5{
+    text-align: center;
+}
+
+#name{
+    width: 150px;
+    height: 20px;
+    /* margin-left: 5%; */
+}
+
+#email{
+    width: 150px;
+    height: 20px;
+    /* margin-left: 5%; */
+}
+#reg{
+    width: 150px;
+    height: 20px;
+    /* margin-left: 5%; */
+}
+#category_type{
+    width: 150px;
+    height: 20px;
+}
+#ur_rank{
+    
+width: 150px;
+height: 20px;
+}
+#cat_rank{
+    width: 150px;
+height: 20px;
+}
+#roll{
+    width: 150px;
+    height: 20px;
+}
+
+#pwd{
+    width: 150px;
+    height: 23px;
+}
+#gender{
+    width: 150px;
+    height: 23px;
+}
+#religion{
+    width: 150px;
+    height: 20px;
+}
+#category{
+    width: 150px;
+    height: 23px;
+}
+#allo_category{
+    width: 150px;
+    height: 20px;
+}
+#DOB{
+    width: 150px;
+    height: 20px;
+}
+#DOA{
+    width: 150px;
+    height: 22px;
+}
+#branch{
+    width: 150px;
+    height: 22px;
+}
+
+#district{
+    width: 150px;
+    height: 20px;
+}
+
+#hostler{
+    width: 150px;
+    height: 20px;
+}
+
+
+#status{
+    width: 150px;
+    height: 20px;
+}
+
+#session{
+    width: 150px;
+    height: 20px;
+}
+
+#roomno{
+    width: 150px;
+    height: 20px;
+}
+
+#pincode{
+     width: 150px;
+    height: 20px;
+}
+#pic{
+    height: 30mm;
+    width: 30mm;
+    border-radius: 50%;
+}
+
+#signature{
+    width: 200px;
+    height: 50px;
+    border: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

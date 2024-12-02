@@ -1,0 +1,748 @@
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Video takes up 70% of viewport height */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-on-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.text-on-video h1 {
+    font-family:cursive;
+    font-size: 600%;
+    margin: 0;
+}
+
+.text-on-video p {
+    font-family: cursive;
+    font-size: 1.5em;
+    margin-top: 400px;
+}
+
+.text-on-video h4{
+    font-family: cursive;
+}
+.nav-icon{
+   margin: 0%;
+   padding: 0%;
+}
+
+#nav-button{
+background: none;
+padding: 0%;
+
+}
+
+#nav-item{
+    display: none;
+    background-color: red;
+    margin: 0%;
+    padding: 0%;
+    width: 500px;
+    height: 722px;
+}
+
+
+.clg_name{
+    position:absolute;
+    top:90% ; /* Adjust this value to position vertically */
+    left: 40%; /* Adjust this value to position horizontally */
+    font-size: 100%; /* Size of the icon */
+    color: white; /* Icon color */
+    padding: 10px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-family: cursive;
+}
+#clg-name{
+    color: white;
+}
+
+
+#clg-name :visited {
+    color: white;
+}
+
+.text-outside-video {
+    background: linear-gradient(200deg, black , rgb(2, 2, 49));
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    
+}
+
+.text-outside-video h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+    margin: 0;
+    font-size: 2em;
+}
+
+.text-outside-video p {
+    font-family:monospace;
+    color: whitesmoke;
+   text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.image-on-video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.image-on-video img {
+    max-width: 100%;
+    height: auto;
+    width: 50px; /* Set a specific width for the image */
+    
+}
+#second{
+    padding: 4%;
+}
+
+
+.displays_logo{
+    padding: 10px;
+}
+
+.row{
+    width: 100%;
+}
+.upcomingevent{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.upcomingevent .event-header{
+    margin: 2%;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: cursive;
+}
+.upcomingevent .event-det{
+    color: #daa531;
+    font-size: 2rem;
+}
+
+/* .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: rgb(77, 75, 147);
+    background-clip: border-box;
+    border-radius: .25rem;
+    height:100%;
+} */
+
+
+.card-title{
+    
+    font-weight: bold;
+    color: white;
+}
+.card-content{
+    font-weight: 400;
+    color:black;
+}
+
+
+.img{
+    padding: 10%;
+    height:80%;
+    width: auto;
+    border-radius: 20%;
+}
+.scrollable-row {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px;
+    background-image: linear-gradient(to bottom blue red);
+    
+    white-space:nowrap; /* Prevent cards from wrapping to the next line */
+    scrollbar-width: 2%;
+    height: 430px;
+    
+}
+
+.scrollable-row .card {
+    flex: 0 0 auto;
+    width: 400px; /* Set the width of each card */
+    height: 350px; /* Set the height of each card */
+    margin-right: 20px;
+    background-color: #564581;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    
+}
+#third{
+    padding: 5%;
+    font-weight: bolder;
+}
+
+
+
+
+/* .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: rise 5s infinite ease-in;
+    opacity: 0;
+} */
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-1000px) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Create multiple bubbles with different sizes and speeds */
+/* .bubble:nth-child(2) {
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    background-color: red;
+}
+
+.bubble:nth-child(3) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 8s;
+    animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 10s;
+    animation-delay: 1s;
+} */
+
+.button-container {
+    position: absolute;
+    top: 10%;
+    right: 20px; /* Adjust this value to control the distance from the right */
+    transform: translateY(-50%);
+}
+
+.right-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(56, 12, 231, 0.7);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-button:hover {
+    background-color: rgba(67, 64, 148, 0.9);
+    cursor: pointer;
+}
+.nav-icon {
+    position: absolute;
+    top: 2%; /* Adjust this value to position vertically */
+    left: 20px; /* Adjust this value to position horizontally */
+    font-size: 50px; /* Size of the icon */
+    color: white; /* Icon color */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the icon stays above the video */
+}
+
+.nav-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.flip-card {
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px; 
+    
+    
+    /* Perspective for 3D effect */
+   
+}
+
+.flip-card-inner {
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px 20px 10px 20px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    /* background-color: aquamarine; */
+    background-image: url(/lekhni1.jpg);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    
+}
+
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.row{
+    padding: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+
+#club_para{
+    padding:0;
+    font-size:large;
+    color: black;
+    text-align: left;
+    padding-left: 15px;
+   padding-right: 5px;
+}
+.club_a{
+    text-align: center;
+    justify-content: center;
+}
+.club_boton{
+ background-color: transparent;
+
+}
+.club_button{
+    background-color: transparent;
+    border: none;
+}
+.club_button:hover{
+    
+    background-color: rgb(168, 180, 195);
+    border-radius: 10px 50px 50px 10px;
+}
+
+
+.club_para{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 250px;
+}
+.discription{
+    width: 380px;
+    height: 280px;
+}
+
+/* .club_name{
+    padding-top: 90%;
+} */
+.col-sm-4{
+    padding: 0%;
+    margin: 0%;
+    width: 400px;
+}
+
+
+.moments{
+    padding-top:50px ;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    
+    padding-top: 5%;
+}
+
+.moment-image{
+    width: 200px;          /*Size can be set eisely */
+    height: 200px;
+    
+}
+.seperate{
+    border: 2px solid white;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    padding-top: 2%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+.gallery-name{
+    padding-top: 2%;
+}
+.column{
+    width: 257.75px;
+    float: right;
+    background-image: url("/bubble.jpg");
+    height: 400px;
+    margin-right: 2%;
+    position: relative;
+    border-radius: 5%;
+}
+.column-button{
+    width: 50%;
+    border-radius: 15px;
+    background-color: rgb(141, 120, 81);
+    color: white;
+    border-width: 2px 2px 2px 2px;
+    height: 30px;
+    border-color: white white white white;
+    
+}
+.column-button:hover{
+    background-color: black;
+}
+.column-stack{
+    padding-top: 5%;
+}
+.column-link{
+    padding: 2%;
+}
+
+.moreinfo{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.moreinfo:hover{
+    background-color: #45a049;
+}
+
+
+.music-image{
+    width: 200px;
+    height: 200px;
+}
+#music-content-paragraph{
+text-align: left;
+}
+.music-gallery{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#music-subscript{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+#music-content{
+    display: none;
+                margin-top: 20px;
+                border: 1px solid #000;
+                padding: 10px;
+                background-color: #f0f0f0;
+}
+.dance-image{
+    width: 200px;
+    height: 200px;
+}
+#dance-subscript{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+.dance-gallery{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#dance-content-paragraph{
+    text-align: left;
+    }
+#dance-content{
+ display: none;
+  margin-top: 20px;
+ border: 1px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+    }
+.poetry-image{
+        width: 200px;
+        height: 200px;
+    }
+#poetry-subscript{
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+.poetry-gallery{
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+#poetry-content-paragraph{
+        text-align: left;
+        }
+#poetry-content{
+ display: none;
+ margin-top: 20px;
+ border: 1px solid #000;
+ padding: 10px;
+ background-color: #f0f0f0;
+   }
+    .drama-image{
+            width: 200px;
+            height: 200px;
+        }
+        #drama-subscript{
+            margin-top: 0%;
+            margin-bottom: 2%;
+        }
+        .drama-gallery{
+            margin-left: 5%;
+            margin-right: 5%;
+        
+        }
+        #drama-content-paragraph{
+            text-align: left;
+            }
+            #drama-content{
+                display: none;
+                margin-top: 20px;
+                border: 1px solid #000;
+                padding: 10px;
+                background-color: #f0f0f0;
+                  }
+#newContent {
+                display: none;
+                margin-top: 20px;
+                border: 1px solid #000;
+                padding: 10px;
+                background-color: #f0f0f0;
+            }
+            .close-icon {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            .science-image{
+                width: 200px;
+                height: 200px;
+            }
+            #science-subscript{
+                margin-top: 0%;
+                margin-bottom: 2%;
+            }
+            .science-gallery{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            #science-content-paragraph{
+                text-align: left;
+                }
+            #science-content{
+               display: none;
+               margin-top: 20px;
+               border: 1px solid #000;
+               padding: 10px;
+               background-color: #f0f0f0;
+                }
+
+            .politics-image{
+                width: 200px;
+                height: 200px;
+            }
+            #politics-subscript{
+                margin-top: 0%;
+                margin-bottom: 2%;
+            }
+            .politics-gallery{
+                margin-left: 5%;
+                margin-right: 5%;
+            
+            }
+            #politics-content-paragraph{
+                text-align: left;
+                }
+                #politics-content{
+                    display: none;
+                    margin-top: 20px;
+                    border: 1px solid #000;
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                     }
+
+#content-poli{
+    display: none;
+                margin-top: 20px;
+                border: 1px solid #000;
+                padding: 10px;
+                background-color: #f0f0f0;
+}
+
+.photography-image{
+    width: 200px;
+    height: 200px;
+}
+#photography-subscript{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+.photography-gallery{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#photography-content-paragraph{
+    text-align: left;
+    }
+    #photography-content{
+        display: none;
+        margin-top: 20px;
+        border: 1px solid #000;
+        padding: 10px;
+        background-color: #f0f0f0;
+          }
+.coding-image{
+    width: 200px;
+    height: 200px;
+}
+#coding-subscript{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+.coding-gallery{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#coding-content-paragraph{
+    text-align: left;
+    }
+ #coding-content{
+  display: none;
+  margin-top: 20px;
+ border: 1px solid #000;
+ padding: 10px;
+ background-color: #f0f0f0;
+ }
+
+ .footer{
+    background-color: dimgray;
+    text-align: center;
+    border: none;
+    margin: 0;
+}
+
+
+
+

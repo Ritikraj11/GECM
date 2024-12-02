@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* The background image container */
+.background {
+    background-image: url('/GECM.jpg'); /* Path to your background image */
+    background-size: cover;  /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    height: 90%;  /* Full height */
+    display:flex;
+    justify-content: center; /* Horizontally center the form */
+    align-items: center;  /* Vertically center the form */
+    position: relative;  /* Needed for proper positioning of the form */
+    overflow: hidden;
+}
+
+.form-container {
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(48, 47, 47, 0.3);
+    width: 300px;
+    opacity: 0.5;
+    
+}
+
+#form-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="tel"] {
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+.marquee {
+    background-color: grey;
+    width: 100%;                /* Full width of the container */
+    overflow: hidden;           /* Hide the overflow (text that moves outside the container) */
+    position: relative;         /* Create a relative positioning context for the inner element */
+    background: linear-gradient(to right, black,rgba(93,95,62,255),black);
+}
+
+.marquee p {
+    color: white;
+   font-size: xx-large;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space:nowrap;        /* Prevent the text from wrapping to the next line */
+    animation: scroll 30s linear infinite;  /* Animation to scroll the text */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);  /* Start from right off-screen */
+    }
+    100% {
+        transform: translateX(-100%); /* End at left off-screen */
+    }
+}
+
+#name-head{
+    font-size: large;
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 8px rgba(255, 250, 250, 1);
+    font-weight: bold;
+}

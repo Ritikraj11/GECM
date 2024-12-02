@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    background-color: antiquewhite;
+    height: 100vh;
+    
+}
+.form-body{
+    width: 21cm;
+    height: 200%;
+    background-color: #fff;
+    margin: auto;
+    align-self: center;
+ 
+}
+.top{
+position: absolute;
+top: 0;
+width: 100%;
+height: 2px;
+background-color: red;
+margin: auto;
+}
+.bottom {
+    position: absolute;
+   bottom: 0;
+   margin: auto;
+   width: 100%;
+height: 2px;
+background-color: red;
+}
+
+
+
+
+#form{
+    margin-left: 10%;
+   /* margin-top: 10%;  */
+   font-size:medium;
+   /* width: 2480px;
+   height: 3508px; */
+   
+ }
+ #college{
+     text-align: center;
+     color: #000066;
+ }
+ /* #img{
+     width: 10%;
+     right: 40%;
+ } */
+ 
+ #name{
+     width: 200px;
+     height: 30px;
+     /* margin-left: 5%; */
+     
+ } 
+
+ /* #naam{
+    width: 200px;
+     height: 30px;
+     margin-left: 11%;
+ }
+
+ #namee{
+    margin-left: 6%;
+ } */
+ .email{
+     width: 200px;
+     height: 30px;
+     margin-left: 10%;
+ }
+
+ /* #email{
+    width: 200px;
+     height: 30px;
+     margin-left: 40%;
+ } */
+
+/* #mail{
+margin-left: 50%;
+margin-top: -4%;
+} */
+
+
+
+
+ #reg{
+     width: 200px;
+     height: 30px;
+ }
+
+ /* #regis{
+    width: 200px;
+    height: 30px;
+    margin-left: 12%; */
+ /* } */
+ #category_type{
+     width:200px ;
+     height: 30px;
+     /* margin-left: 10%;
+     margin-left: 60%; */
+ }
+ 
+ #all{
+     background-color: aqua;
+ }
+ #ur_rank{
+    width:200px ;
+     height: 30px;
+ }
+ #cat_rank{
+    width:200px ;
+     height: 30px;
+ }
+ #pwd{
+    width:200px ;
+     height: 30px;
+ }
+ #gender{
+    width:200px ;
+     height: 30px;
+ }
+
+ #religion{
+    width:200px ;
+     height: 30px;
+ }
+ #roll{
+    width:200px ;
+     height: 30px;
+ }
+
+#category{
+    width:200px ;
+     height: 30px;
+}
+
+#allo_category{
+    width:200px ;
+     height: 30px;
+}
+#DOB{
+    width:200px ;
+     height: 30px;
+}
+#DOA{
+    width:200px ;
+     height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #submit{
+    margin-left: 40%;
+ }

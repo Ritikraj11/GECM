@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="/join.css">
+</head>
+<body>
+    
+  <div class="background">
+    
+
+    <div class="form-container">
+        <h1 id="form-h1">Join Us</h1>
+        <form action="submit_form.php" method="POST" class="join-us-form">
+            
+            <!-- Name Field -->
+            <div class="form-group">
+                <label id="name-head" for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Mobile Number Field -->
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" >
+                <small>Enter a 10-digit number</small>
+            </div>
+
+            <!-- Multiple Checkbox Options -->
+            <div class="form-group">
+                <label>Choose your interests:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                    <label><input type="checkbox" name="interests" value="designing"> Designing</label>
+                    <label><input type="checkbox" name="interests" value="marketing"> Marketing</label>
+                    <label><input type="checkbox" name="interests" value="writing"> Writing</label>
+                    <label><input type="checkbox" name="interests" value="photography"> Photography</label>
+                    <label><input type="checkbox" name="interests" value="drama"> Drama</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Join Us</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+  
+<div class="marquee">
+    <p>Why to Join Us ?   &emsp; &emsp; We are here to create Memorable moments and a better campus life. </p>
+    
+</div>
+
+
+
+  
+
+
+</body>
+</html>
