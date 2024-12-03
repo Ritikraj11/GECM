@@ -189,7 +189,19 @@ padding: 0%;
     color:black;
 }
 
+#dev-pic{
+    height: 300px;
+    width: auto;
+    border: 2px solid white;
+}
+#dev-head{
+    padding: 1%;
 
+}
+#dev-name{
+    color: white;
+    padding: 1%;
+}
 .img{
     padding: 10%;
     height:250px;
@@ -225,6 +237,7 @@ padding: 0%;
 }
 #third{
     padding: 5%;
+    padding-top: 1%;
     font-weight: bolder;
 }
 
