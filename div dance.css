@@ -1,12 +1,11 @@
 
-#music{
+#dance{
     position: relative;
     font-family: Arial, sans-serif;
     margin: 20px;
     overflow: hidden; 
 }
-
-.music-gallery{
+.dance-gallery{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -14,11 +13,11 @@
 
 }
 
-#music-club-name{
+#dance-club-name{
     padding: 2%;
     padding-bottom: 0%;
 }
-.music-image{
+.dance-image{
     width: 200px;
     height: 300px;
     object-fit:contain;
@@ -44,7 +43,7 @@
 }
 
 /* Style for the individual images */
-.scrollable-gallery .music-image {
+.scrollable-gallery .dance-image {
     height: 80%; /* Images will take up 80% of the container height */
     max-height: 600px; /* Maximum height for larger screens */
     margin: 0 10px; /* Horizontal spacing between images */
@@ -53,7 +52,7 @@
     transition: transform 0.3s ease;
 }
 
-.scrollable-gallery .music-image:hover {
+.scrollable-gallery .dance-image:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -71,7 +70,7 @@
     background: #45a049;
 }
 /* Close Button Styles */
-.close-gallery-button-music {
+.close-gallery-button-dance {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -87,7 +86,7 @@
     transition: background-color 0.3s ease;
 }
 
-.close-gallery-button-music:hover {
+.close-gallery-button-dance:hover {
     background-color: #ff3333; /* Darker red on hover */
 }
 
@@ -95,21 +94,21 @@
 
 
 
-.music-image:hover {
+.dance-image:hover {
     transform: scale(1.1); /* Adds hover effect to enlarge the image */
 }
-#music-content-paragraph{
+#dance-content-paragraph{
     text-align: left;
 
 }
 
-#music-content{
+#dance-content{
     margin-top: 20px;
     padding: 15px;
     background-color: #f0f0f0;
     border-radius: 5px;
 }
-#music-content p{
+#dance-content p{
     color: black;
 }
 
@@ -139,7 +138,7 @@
     animation: rollAnimation 1s ease-in-out forwards;
 }
 
-.show-images-button-music {
+.show-images-button-dance {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -152,7 +151,7 @@
     transition: background-color 0.3s;
 }
 
-.show-images-button-music:hover {
+.show-images-button-dance:hover {
     background-color: #45a049;
 }
 
