@@ -63,6 +63,7 @@ padding: 0%;
 }
 .first{
     text-align: left;
+    font-size: 18px;
 }
 #nav-item{
     display: none;
@@ -120,7 +121,7 @@ padding: 0%;
     color: whitesmoke;
    
     margin-top: 10px;
-    font-size: 1.2em;
+    
 }
 
 .image-on-video {
