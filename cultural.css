@@ -61,7 +61,9 @@ background: none;
 padding: 0%;
 
 }
-
+.first{
+    text-align: left;
+}
 #nav-item{
     display: none;
     background-color: red;
