@@ -165,7 +165,7 @@ padding: 0%;
     font-size: 2rem;
 }
 
-/* .card{
+ .card{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,8 @@ padding: 0%;
     background-clip: border-box;
     border-radius: .25rem;
     height:100%;
-} */
+    width: 50%;
+} 
 
 
 .card-title{
@@ -190,7 +191,7 @@ padding: 0%;
 
 .img{
     padding: 10%;
-    height:80%;
+    height:250px;
     width: auto;
     border-radius: 20%;
 }
@@ -208,8 +209,8 @@ padding: 0%;
 
 .scrollable-row .card {
     flex: 0 0 auto;
-    width: 400px; /* Set the width of each card */
-    height: 350px; /* Set the height of each card */
+    width: 250px; /* Set the width of each card */
+    height: 310px; /* Set the height of each card */
     margin-right: 20px;
     background-color: #564581;
     color: white;
