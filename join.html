@@ -23,22 +23,37 @@
 
             <!-- Mobile Number Field -->
             <div class="form-group">
-                <label for="mobile">Mobile Number:</label>
-                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" >
+                <label id="mob-head" for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Enter your mobile number" required>
                 <small>Enter a 10-digit number</small>
             </div>
-
+            <div class="batch">
+            <label id="batch-head" for="batch">Select Your Batch</label>
+            <br>
+            <select id="batch" name="batch" required>
+                <option value="null">Select Your Batch</option>
+                <option  value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                
+            </select>
+        </div>
             <!-- Multiple Checkbox Options -->
             <div class="form-group">
                 <label>Choose your interests:</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="interests" value="coding"> Coding</label>
-                    <label><input type="checkbox" name="interests" value="designing"> Designing</label>
-                    <label><input type="checkbox" name="interests" value="marketing"> Marketing</label>
-                    <label><input type="checkbox" name="interests" value="writing"> Writing</label>
+                    <label><input type="checkbox" id="sport" name="interests" value="coding"> Sports</label>
+                    <label><input type="checkbox" name="interests" value="designing"> Music</label>
+                    <label><input type="checkbox" name="interests" value="marketing"> Dance</label>
+                    <label><input type="checkbox" name="interests" value="writing"> Poetry</label>
                     <label><input type="checkbox" name="interests" value="photography"> Photography</label>
                     <label><input type="checkbox" name="interests" value="drama"> Drama</label>
+                    <label><input type="checkbox" name="interests" value="drama"> Science</label>
+                    <label><input type="checkbox" name="interests" value="drama"> Politics</label>
+                    <label><input type="checkbox" name="interests" value="drama"> Coding</label>
                 </div>
+                <input type="text" id="textbox" placeholder="Name Of the Sports" required>
             </div>
 
             <!-- Submit Button -->
@@ -59,7 +74,7 @@
 
 
   
-
+<script src="/join.js"></script>
 
 </body>
 </html>

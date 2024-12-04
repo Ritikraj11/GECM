@@ -24,7 +24,7 @@ html, body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(48, 47, 47, 0.3);
     width: 300px;
-    opacity: 0.5;
+    opacity: 0.8;
     
 }
 
@@ -35,6 +35,7 @@ html, body {
 }
 
 .form-group {
+    
     margin-bottom: 15px;
 }
 
@@ -45,7 +46,7 @@ label {
 
 input[type="text"], input[type="tel"] {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -60,6 +61,8 @@ input[type="checkbox"] {
 }
 
 .checkbox-group {
+    font-size: 4rem;
+    font-weight: bolder;
     display: flex;
     flex-direction: column;
 }
@@ -117,4 +120,40 @@ small {
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 8px rgba(255, 250, 250, 1);
     font-weight: bold;
+}
+#name{
+   
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+#mob-head{
+    font-size: large;
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 8px rgba(255, 250, 250, 1);
+    font-weight: bold;
+}
+#mobile{
+    
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+#batch-head{
+    font-size: large;
+    font-weight: bolder;
+}
+#batch{
+    width: 100%;
+    height: 30px;
+}
+.batch{
+    padding-top: 0%;
+    padding-bottom: 15px;
+}
+#textbox{
+    display: none;
+    font-weight: bolder;
+    border: 2px solid black;
 }
