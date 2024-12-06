@@ -1,4 +1,4 @@
-const checkbox = document.getElementById('sport');
+const checkbox = document.getElementById('sports');
 const textbox = document.getElementById('textbox');
 
 checkbox.addEventListener('change', () => {
