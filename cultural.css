@@ -40,6 +40,9 @@ body, html {
     font-family:cursive;
     font-size: 600%;
     margin: 0;
+    /* background-image: linear-gradient(to right, grey,rgb(215, 255, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .text-on-video p {
@@ -193,7 +196,13 @@ padding: 0%;
     height: 300px;
     width: auto;
     border: 2px solid white;
+    transition: transform 0.6s ease-in-out;
+   
 }
+#dev-pic:hover{
+    transform: scale(1.4);
+}
+
 #dev-head{
     padding: 1%;
 
@@ -233,7 +242,6 @@ padding: 0%;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    
 }
 #third{
     padding: 5%;
@@ -382,6 +390,7 @@ padding: 0%;
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    
 }
 
 .flip-card-front, .flip-card-back {
@@ -497,6 +506,9 @@ padding: 0%;
 .gallery-name{
     padding-top: 2%;
 }
+
+
+
 .column{
     width: 257.75px;
     float: right;
@@ -758,8 +770,37 @@ text-align: left;
     text-align: center;
     border: none;
     margin: 0;
+    
+}
+.social-media{
+    position: fixed;
+      left: 0;
+      top: 80%;
+      transform: translateY(-50%);
+      background-color: #333;
+      padding: 10px;
+      border-radius: 0 10px 10px 0;
+      transition:0.6s ease-in-out;
 }
 
+.social-media:hover{
+    width: 100px;
+}
 
+footer a {
+     display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 20px;
+      transition: color 0.3s;
+    
+  }
+footer a:hover {
+    color: #0077ff;
+    transform: scale(1.5);
+    
+  }
 
 
