@@ -797,10 +797,12 @@ footer a {
       transition: color 0.3s;
     
   }
-footer a:hover {
+/* footer a:hover {
     color: #0077ff;
     transform: scale(1.5);
     
-  }
-
+  } */
+.some1:hover{
+    transform: translate(5px ,-5px);
+}
 
