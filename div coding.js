@@ -4,14 +4,19 @@ function scrollToDivcoding() {
 }
 
 
-const button9 = document.getElementById('coding-club-button');
- const newContent9 = document.getElementById('coding-content');
 
- // Add an event listener to the button
- button9.addEventListener('click', function() {
-     // Display the new content
-     newContent9.style.display = 'block';
- });
+const button9 = document.getElementById('coding-club-button');
+const newContent9 = document.getElementById('coding-content');
+const closeBtn1 = document.getElementById('close-coding-content');
+
+button9.addEventListener('click', function() {
+    newContent9.style.display = 'block';
+});
+
+closeBtn1.addEventListener('click', function() {
+    newContent9.style.display = 'none';
+});
+
 
  document.getElementById('show-images-button-coding').addEventListener('click', function () {
     const codingDiv = document.getElementById('coding');

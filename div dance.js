@@ -2,15 +2,18 @@ function scrollToDivdance() {
     document.getElementById("dance").scrollIntoView({ behavior: "smooth" });
 }
 
-const button3 = document.getElementById('dance-club-button');
- const newContent3 = document.getElementById('dance-content');
 
- // Add an event listener to the button
+ const button3 = document.getElementById('dance-club-button');
+ const newContent3 = document.getElementById('dance-content');
+ const closeBtn = document.getElementById('close-dance-content');
+ 
  button3.addEventListener('click', function() {
-     // Display the new content
      newContent3.style.display = 'block';
  });
-
+ 
+ closeBtn.addEventListener('click', function() {
+     newContent3.style.display = 'none';
+ });
 
  
  document.getElementById('show-images-button-dance').addEventListener('click', function () {

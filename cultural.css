@@ -64,10 +64,26 @@ background: none;
 padding: 0%;
 
 }
-.first{
+.first {
+    font-size: 18px; /* default size for desktop */
+    line-height: 1.6;
     text-align: left;
-    font-size: 18px;
-}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .first {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .first {
+      font-size:14px;
+      text-align: center;
+  }
+  }
+
 #nav-item{
     display: none;
     background-color: red;
@@ -101,7 +117,7 @@ padding: 0%;
 }
 
 .text-outside-video {
-    background: linear-gradient(200deg, black , rgb(2, 2, 49));
+    background: linear-gradient(rgb(4, 0, 4), rgb(41, 4, 41) ,rgb(65, 22, 81),rgb(40, 11, 95), rgb(1, 1, 49),rgb(65, 22, 81),rgb(15, 6, 33));
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
@@ -244,6 +260,44 @@ padding: 0%;
     align-items: center;
     font-size: 1.2em;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .scrollable-row {
+      font-size: 16px;
+      text-align: center;
+      height: 100%;
+      width: auto;
+    }
+    .scrollable-row .card {
+      width: 200px; /* Adjust the width for smaller screens */
+      height: 250px; /* Adjust the height for smaller screens */
+    }
+    .img{
+        height: 200px;
+        width: auto;
+        border-radius: 20%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .scrollable-row {
+      font-size:14px;
+      text-align: center;
+      height: 50%;
+      width: auto;
+  }
+    .scrollable-row .card {
+      width: 150px; /* Adjust the width for smaller screens */
+      height: 200px; /* Adjust the height for smaller screens */
+    }
+    .img{
+        height: 150px;
+        width: auto;
+        border-radius: 20%;
+    }
+  }
 #third{
     padding: 5%;
     padding-top: 1%;

@@ -2,14 +2,23 @@ function scrollToDivdrama() {
     document.getElementById("drama").scrollIntoView({ behavior: "smooth" });
 }
 
-const button6 = document.getElementById('drama-club-button');
- const newContent6 = document.getElementById('drama-content');
 
- // Add an event listener to the button
- button6.addEventListener('click', function() {
-     // Display the new content
-     newContent6.style.display = 'block';
+
+
+const button = document.getElementById('drama-club-button');
+ const newContent = document.getElementById('drama-content');
+ const closeBtn = document.getElementById('close-drama-content');
+ 
+ button.addEventListener('click', function() {
+     newContent.style.display = 'block';
  });
+ 
+ closeBtn.addEventListener('click', function() {
+     newContent.style.display = 'none';
+ });
+
+
+
 
  document.getElementById('show-images-button-drama').addEventListener('click', function () {
     const dramaDiv = document.getElementById('drama');
