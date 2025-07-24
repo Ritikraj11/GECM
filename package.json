@@ -1,30 +1,28 @@
 {
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "mongodb": "^6.18.0",
-    "mongoose": "^8.16.4"
-  },
   "name": "gecm",
   "version": "1.0.0",
-  "description": "",
-  "main": "cultural.js",
+  "description": "Join form backend for GECM",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ritikraj11/GECM.git"
+    "url": "https://github.com/Ritikraj11/GECM.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ritik Raj",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Ritikraj11/GECM/issues"
   },
   "homepage": "https://github.com/Ritikraj11/GECM#readme"
 }
+
