@@ -6,6 +6,15 @@
   "scripts": {
     "start": "node server.js"
   },
+  "keywords": [
+    "GECM",
+    "Join",
+    "MongoDB",
+    "Express",
+    "Backend"
+  ],
+  "author": "Ritik Raj",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -17,12 +26,8 @@
     "type": "git",
     "url": "https://github.com/Ritikraj11/GECM.git"
   },
-  "keywords": [],
-  "author": "Ritik Raj",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ritikraj11/GECM/issues"
   },
   "homepage": "https://github.com/Ritikraj11/GECM#readme"
 }
-
