@@ -10,8 +10,10 @@
   <div class="background">
     <div class="form-container">
       <h1 id="form-h1">Join Us</h1>
-      <!-- 🔗 Updated form action to live backend -->
+
+      <!-- ✅ Updated form action to Render backend -->
       <form action="https://gecm.onrender.com/join" method="POST" class="form-group">
+
         <!-- Name Field -->
         <div class="form-group">
           <label id="name-head" for="name">Full Name:</label>
@@ -26,10 +28,10 @@
         </div>
 
         <!-- Batch Selection -->
-        <div class="batch">
+        <div class="form-group batch">
           <label id="batch-head" for="batch">Select Your Batch</label><br />
           <select id="batch" name="batch" required>
-            <option value="null">Select Your Batch</option>
+            <option value="">Select Your Batch</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
@@ -51,7 +53,7 @@
             <label><input type="checkbox" name="interests" value="politics" /> Politics</label>
             <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
           </div>
-          <input type="text" name="specification" id="textbox" placeholder="Name Of the Sports" />
+          <input type="text" name="specification" id="textbox" placeholder="Name of the Sport (if any)" />
         </div>
 
         <!-- Submit Button -->
@@ -62,10 +64,12 @@
     </div>
   </div>
 
+  <!-- Footer Marquee -->
   <div class="marquee">
-    <p>Why to Join Us? &emsp; &emsp; We are here to create Memorable moments and a better campus life.</p>
+    <p>Why to Join Us? &emsp;&emsp; We are here to create Memorable moments and a better campus life.</p>
   </div>
 
+  <!-- Optional JS if needed -->
   <script src="/join.js"></script>
 </body>
 </html>

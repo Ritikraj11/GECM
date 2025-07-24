@@ -12,15 +12,16 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Connect to MongoDB Atlas
+// MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  dbName: 'Smriti'
 })
 .then(() => console.log('✅ Connected to MongoDB Atlas'))
 .catch(err => console.error('❌ MongoDB connection error:', err));
 
-// Schema and model
+// Schema
 const formSchema = new mongoose.Schema({
   name: String,
   mobile: String,
@@ -35,30 +36,24 @@ const JoinForm = mongoose.model('JoinForm', formSchema, 'joiniee');
 // Routes
 app.post('/join', async (req, res) => {
   try {
-    const { name, mobile, batch, specification, interests } = req.body;
+    let { name, mobile, batch, interests, specification } = req.body;
 
-    const normalizedInterests = Array.isArray(interests)
-      ? interests
-      : interests ? [interests] : [];
+    if (interests && !Array.isArray(interests)) {
+      interests = [interests]; // force to array
+    }
 
-    const newEntry = new JoinForm({
-      name,
-      mobile,
-      batch,
-      interests: normalizedInterests,
-      specification
-    });
+    const newEntry = new JoinForm({ name, mobile, batch, interests, specification });
+    await newEntry.save();
 
-    app.get('/join', (req, res) => {
-  res.send('✅ This is the Join endpoint. Use POST method to submit form.');
+    res.status(201).json({ message: 'Form submitted successfully!' });
+  } catch (error) {
+    console.error('❌ Error submitting form:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
-    await newEntry.save();
-    res.status(201).json({ message: 'Form submitted successfully!' });
-  } catch (err) {
-    console.error('❌ Error saving form:', err);
-    res.status(500).json({ error: 'Internal server error' });
-  }
+app.get('/', (req, res) => {
+  res.send('🌐 Backend is Live!');
 });
 
 // Start server
