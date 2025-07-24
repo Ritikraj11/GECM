@@ -49,6 +49,10 @@ app.post('/join', async (req, res) => {
       specification
     });
 
+    app.get('/join', (req, res) => {
+  res.send('✅ This is the Join endpoint. Use POST method to submit form.');
+});
+
     await newEntry.save();
     res.status(201).json({ message: 'Form submitted successfully!' });
   } catch (err) {
