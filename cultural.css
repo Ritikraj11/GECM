@@ -419,9 +419,9 @@ padding: 0%;
 .flip-card {
     padding: 10px;
     background-color: transparent;
-    width: 100%;
+    width: 80%;
     height: 300px;
-    /* perspective: 1000px;  */
+    perspective: 1000px; 
     
     
     /* Perspective for 3D effect */
