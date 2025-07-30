@@ -476,6 +476,7 @@ padding: 0%;
     
 }
 .row{
+    width: 100%;
     padding: 10px;
     padding-left: 8%;
     padding-right: 8%;
