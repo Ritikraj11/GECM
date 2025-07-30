@@ -166,9 +166,6 @@ padding: 0%;
     padding: 10px;
 }
 
-.row{
-    width: auto;
-}
 .upcomingevent{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -184,7 +181,6 @@ padding: 0%;
     color: #daa531;
     font-size: 2rem;
 }
-
  .card{
     position: relative;
     display: flex;
@@ -480,7 +476,7 @@ padding: 0%;
     
 }
 .row{
-    padding: 10px;
+    /* padding: 10px; */
     padding-left: 8%;
     padding-right: 8%;
 }
